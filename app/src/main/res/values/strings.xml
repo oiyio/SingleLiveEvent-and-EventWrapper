@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SingleLiveEvent</string>
+    <string name="screen1">1st Activity uses <b>MutableLiveData&lt;Boolean&gt;()</b>. "\n""\n"<b>Click me to open the next screen</b>. Then go back. When you rotate the screen, next screen is opened. This is a BUG!</string>
+    <string name="screen2">2nd Activity uses <b>SingleLiveEvent&lt;Boolean&gt; </b>. "\n""\n"<b>Click me to open the next screen</b>. Then go back. When you rotate the screen, everything is OK. There is no bug in this screen.</string>
+    <string name="screen3">3th Activity uses <b>SingleLiveEvent&lt;String&gt; </b> We observe SingleLiveData from three places but only one observer is invoked. <b>Click me to open next screen</b>. For each click, counter is increased and SingleLiveEvent value is changed but only 1 observer is invoked. </string>
+    <string name="screen4">4th Activity uses <b>MutableLiveData&lt;Event&lt;Boolean&gt;&gt;</b>. "\n""\n"<b>Click me to open the next screen</b>. Then go back. When you rotate the screen, everything is OK. There is no bug in this screen. </string>
+    <string name="screen5">5th Activity uses <b>MutableLiveData&lt;Event&lt;Boolean&gt;&gt;</b>.  We observe <b>MutableLiveData&lt;Event&lt;Boolean&gt;&gt;</b> from three places but we observe by calling getContentIfNotHandled() or peek(). </string>
+</resources>
